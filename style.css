@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Tomorrow';
+  src: url('./fonts/Tomorrow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: url('./fonts/Agrandir-Regular.otf') format('opentype');
+}
+
+
+
+/* h1 {
+    font-family:'Tomorrow';
+} */
