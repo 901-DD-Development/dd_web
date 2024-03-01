@@ -8330,6 +8330,10 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 2rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -9533,6 +9537,11 @@ details.collapse summary::-webkit-details-marker {
   border-style: none;
 }
 
+.border-violet-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(124 58 237 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -9824,6 +9833,11 @@ details.collapse summary::-webkit-details-marker {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
