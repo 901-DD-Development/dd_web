@@ -3,9 +3,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'tomorrow': ['Tomorrow'],
-        'agrandir': ['Agrandir'],
-      },
+        Tomorrow: ['Tomorrow'],
+        Agrandir: ['Agrandir'],
+       },
       colors: {
         blue: "#004AAD",
         gray: "#CECECE",

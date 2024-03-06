@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diamond Development</title>
     <link rel="icon" type="image/x-icon" href="/images/transparent_logo.png" />
-    <script src="https://kit.fontawesome.com/a372d53fae.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a372d53fae.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
+    
   </head>
   <body class="bg-blue">
+    <button
+      class="btn btn-circle fixed bottom-4 z-20 right-4 bg-white text-blue border-2 border-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
+      id="backToTopBtn"
+      onclick="scrollToTop()"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <div id="Home">
       <div class="navbar bg-base-100 text-lg">
         <div class="flex-1">
@@ -19,31 +31,33 @@
               alt="Diamond Development Logo"
           /></a>
         </div>
-        <div class="flex-none text-white p-5 font-tomorrow">
-          <button class="btn btn-square btn-ghost mr-7 text-lg">
-            <a href="">Home</a>
+        <div class="flex-none text-white p-5 mr-7 ">
+          <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
+            <a href="#Home">Home</a>
           </button>
-          <button class="btn btn-square btn-ghost mr-7 text-lg">
-            <a href="">Services</a>
+          <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
+            <a href="#Services">Services</a>
           </button>
-          <button class="btn btn-square btn-ghost mr-7 text-lg">
-            <a href="">About</a>
+          <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
+            <a href="#AboutUs">About</a>
           </button>
-          <button class="btn btn-square btn-ghost mr-7 text-lg">
-            <a href="">Contact</a>
+          <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
+            <a href="#TalkToUs">Contact</a>
           </button>
         </div>
       </div>
       <div
-        class="float-right text-white font-agrandir text-9xl mt-36 mr-36 max-w-full tracking-wide"
+        class="float-right text-white  text-8xl mt-36 mr-36 max-w-full tracking-wide"
       >
-        <h1 class="whitespace-nowrap overflow-hidden font-agrandir">
+        <h1 class="whitespace-nowrap overflow-hidden font-Agrandir font-thin">
           Leave the
         </h1>
-        <h1 class="whitespace-nowrap overflow-hidden font-agrandir">tech to us.</h1>
-        <div class="flex justify-center">
+        <h1 class="whitespace-nowrap overflow-hidden font-Agrandir font-thin">
+          tech to us.
+        </h1>
+        <div class="flex justify-center font-Tomorrow">
           <button
-            class=" font-tomorrow  btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white text-blue rounded-md px-6 py-3 hover:text-white"
+            class="font-tomorrow btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white text-blue rounded-md px-6 py-3 hover:text-white"
           >
             Learn More
           </button>
@@ -64,8 +78,8 @@
       >
         <!-- Content -->
         <div class="w-2/3">
-          <h1 class="text-8xl text-blue mb-8 font-agrandir">The DIAMOND Way</h1>
-          <p class="text-2xl text-black font-tomorrow">
+          <h1 class="text-8xl text-blue mb-8 font-Agrandir">The DIAMOND Way</h1>
+          <p class="text-2xl text-black font-Tomorrow">
             Our vision, our mission. We work with you to understand your needs
             and goals, and then we design and develop software that meets them.
             We create software that solves problems, enhances lives, and exceeds
@@ -90,7 +104,7 @@
         id="Services"
         class="h-screen w-screen p-10 bg-white text-black flex flex-col items-center justify-center"
       >
-        <h1 class="text-8xl text-blue mb-8 font-agrandir">What We Offer</h1>
+        <h1 class="text-8xl text-blue mb-8 font-Agrandir">What We Offer</h1>
         <div class="grid grid-cols-3 gap-44">
           <div class="service-item flex flex-col items-center">
             <img
@@ -99,8 +113,8 @@
               class="w-56 h-56"
               style="filter: grayscale(100%)"
             />
-            <h1 class="text-center mt-4 text-blue">Logo Services</h1>
-            <p class="text-center mt-4">Description 1</p>
+            <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Logo Services</h1>
+            <p class="text-center mt-4 font-Tomorrow">Description 1</p>
           </div>
 
           <div class="service-item flex flex-col items-center">
@@ -110,8 +124,8 @@
               class="w-56 h-56"
               style="filter: grayscale(100%)"
             />
-            <h1 class="text-center mt-4 text-blue">Programming Services</h1>
-            <p class="text-center mt-4">Description 2</p>
+            <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Programming Services</h1>
+            <p class="text-center mt-4 font-Tomorrow ">Description 2</p>
           </div>
 
           <div class="service-item flex flex-col items-center">
@@ -121,10 +135,10 @@
               class="w-56 h-56"
               style="filter: grayscale(100%)"
             />
-            <h1 class="text-center mt-4 text-blue">
+            <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">
               Software Maintenance and Support
             </h1>
-            <p class="text-center mt-4">Description 3</p>
+            <p class="text-center mt-4 font-Tomorrow">Description 3</p>
           </div>
 
           <!-- Add more service items as needed -->
@@ -132,42 +146,50 @@
       </div>
       <div class="flex flex-col items-center justify-center">
         <div
-          id="Services"
-          class="h-screen w-screen p-10 bg-gray text-black flex flex-col items-center justify-center"
+          id="AboutUs"
+          class="h-screen w-screen p-2 bg-gray text-black flex flex-col items-center justify-center"
         >
-          <h1 class="text-8xl text-blue mb-8 font-agrandir">Why DD?</h1>
-          <div class="grid grid-cols-3 gap-44">
+          <h1 class="text-8xl text-blue mb-8 font-Agrandir">Why DD?</h1>
+          <div class="grid grid-cols-3 gap-22">
             <div class="service-item flex flex-col items-center">
               <img
                 src="./images/assets/Why DD Image 1.png"
                 alt="asset_photo"
-                class="w-56 h-56"
+                class="w-120 h-120"
                 style="filter: grayscale(100%)"
               />
-              <h1 class="text-center mt-4 text-blue">Wide Network</h1>
-              <p class="text-center mt-4">Description 1</p>
+              <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold ">Wide Network</h1>
+              <p class="text-center mt-4 font-Tomorrow">No matter where you are, we've</p>
+              <p class="text-center  font-Tomorrow">got you covered.</p>
+
             </div>
 
             <div class="service-item flex flex-col items-center">
               <img
                 src="./images/assets/Why DD Image 2.png"
                 alt="asset_photo"
-                class="w-56 h-56"
+                class="w-120 h-120"
                 style="filter: grayscale(100%)"
               />
-              <h1 class="text-center mt-4 text-blue">Unmatched Support</h1>
-              <p class="text-center mt-4">Description 2</p>
+              <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Unmatched Support</h1>
+              <p class="text-center mt-4 font-Tomorrow">Virtual assistance.</p>
+              <p class="text-center font-Tomorrow">Talk to us about any concerns,</p>
+              <p class="text-center font-Tomorrow">24/7.</p>
+
             </div>
 
             <div class="service-item flex flex-col items-center">
               <img
                 src="./images/assets/Why DD Image 3.png"
                 alt="asset_photo"
-                class="w-56 h-56"
+                class="w-120 h-120"
                 style="filter: grayscale(100%)"
               />
-              <h1 class="text-center mt-4 text-blue">Beginner Friendly</h1>
-              <p class="text-center mt-4">Description 3</p>
+              <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Beginner Friendly</h1>
+              <p class="text-center mt-4 font-Tomorrow">Easy peasy UI.</p>
+              <p class="text-center font-Tomorrow">Our interface is simple and easy</p>
+              <p class="text-center font-Tomorrow">to use.</p>
+
             </div>
 
             <!-- Add more service items as needed -->
@@ -180,7 +202,7 @@
           >
             <img src="./images/assets/About Image.png" alt="" class="mt-4" />
             <div id="textBox" class="w-2/3 text-center">
-              <p class="text-5xl text-white">
+              <p class="text-4xl text-white font-Agrandir font-thin">
                 For businesses that need a custom software solution, our
                 software development service is a reliable and affordable option
                 that delivers high-quality results. Unlike other software
@@ -195,48 +217,48 @@
             id="Services"
             class="h-screen w-screen p-10 bg-white text-black flex flex-col items-center"
           >
-            <h1 class="text-8xl mt-12 text-blue mb-8 font-agrandir">
+            <h1 class="text-6xl mt-12 text-blue mb-8 font-Agrandir">
               What Our Clients Say
             </h1>
             <img
               src="./images/assets/stockphotos/stock_long.jpg"
               alt="long_stock_image"
-              class="h-80 w-full object-cover"
+              class="h-80 w-2/3 object-cover"
             />
             <div class="grid grid-cols-3 gap-44">
-              <div class="service-item flex flex-col">
+              <div class="service-item flex flex-col mt-12">
                 <p class="mt-4 font-medium" style="text-align: left">
                   Testimonials are short quotes from people who love your brand.
                   It's a great way to convince customers to try your services.
                 </p>
                 <h1
-                  class="mt-4 text-blue font-bold text-left"
+                  class="mt-4 text-blue text-xl font-Tomorrow font-extrabold text-left"
                   style="text-align: left"
                 >
                   Willifred Industries
                 </h1>
               </div>
 
-              <div class="service-item flex flex-col">
+              <div class="service-item flex flex-col mt-12">
                 <p class="mt-4 font-medium" style="text-align: left">
                   Testimonials are short quotes from people who love your brand.
                   It's a great way to convince customers to try your services.
                 </p>
                 <h1
-                  class="mt-4 text-blue font-bold text-left"
+                  class="mt-4 text-blue text-xl font-Tomorrow font-extrabold text-left"
                   style="text-align: left"
                 >
                   Elvira Montanez
                 </h1>
               </div>
 
-              <div class="service-item flex flex-col">
+              <div class="service-item flex flex-col mt-12">
                 <p class="mt-4 font-medium" style="text-align: left">
                   Testimonials are short quotes from people who love your brand.
                   It's a great way to convince customers to try your services.
                 </p>
                 <h1
-                  class="mt-4 text-blue font-bold text-left"
+                  class="mt-4 text-blue text-xl font-Tomorrow font-extrabold text-left"
                   style="text-align: left"
                 >
                   Buckeroo and Partners
@@ -254,40 +276,54 @@
         id="TalkToUs"
         class="h-3/4 mt-4 p-10 text-white flex flex-col items-center"
       >
-        <p class="text-7xl font-light mb-4 font-agrandir">Talk to Us</p>
-        <p class="text-lg mb-4 mt-4">
+        <p class="text-7xl font-light mb-4 font-Agrandir">Talk to Us</p>
+        <p class="text-lg mb-4 mt-4 font-Tomorrow">
           Feel free to call, email, or hit us up on our social media accounts.
         </p>
-        <button  onclick="sendEmailWithSubject();"
-          class="btn btn-lg bg-white text-blue rounded-md px-6 py-3 hover:text-white mt-8"
+        <button
+          onclick="sendEmailWithSubject();"
+          class="btn btn-lg bg-white text-blue rounded-md px-6 py-3 hover:text-white mt-8 font-Tomorrow"
         >
           Contact Us
         </button>
       </div>
       <footer class="text-white flex justify-between p-8">
         <nav>
-          <h4 class="text-xl text-white footer-title">PHONE</h4>
-          <a href="tel:901-236-6227" class="link link-hover">(901) 236-6227</a>
+          <h4 class="text-xl text-white footer-title8 font-Tomorrow font-extrabold border-b-2 border-white">PHONE</h4>
+          <a href="tel:901-236-6227" class="link link-hover font-Tomorrow">(901) 236-6227</a>
         </nav>
         <nav>
-          <h4 class="footer-title text-xl">EMAIL</h4>
-          <a href="mailto:contactdiamonddev@gmail.com" class="link-hover">contactdiamonddev@gmail.com</a>
+          <h4 class=" text-xl font-Tomorrow font-extrabold border-b-2 border-white">EMAIL</h4>
+          <a href="mailto:contactdiamonddev@gmail.com" class="link-hover"
+            >contactdiamonddev@gmail.com</a
+          >
         </nav>
         <nav>
-          <div class="grid grid-flow-col gap-4 mt-4">
-    <a class="flex items-center" style="margin-top: 5px;">
-        <i class="fa-brands fa-facebook fa-2xl" style="color: #fffeff;"></i>
-    </a>
+          <div class="grid grid-flow-col gap-4 mt-4 mr-16">
+            <a class="flex items-center" style="margin-top: 5px">
+              <i
+                class="fa-brands fa-facebook fa-2xl"
+                style="color: #fffeff"
+              ></i>
+            </a>
 
-    <a class="flex items-center relative" style="margin-top: 5px;">
-        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #fffeff;"></i>
-    </a>
+            <a class="flex items-center relative" style="margin-top: 5px">
+              <i
+                class="fa-brands fa-x-twitter fa-2xl"
+                style="color: #fffeff"
+              ></i>
+            </a>
 
-    <a class="flex items-center p-2 rounded-full" style="margin-top: 5px;">
-        <i class="fa-brands fa-instagram fa-2xl" style="color: #fffeff;"></i>
-    </a>
-</div>
-
+            <a
+              class="flex items-center p-2 rounded-full"
+              style="margin-top: 5px"
+            >
+              <i
+                class="fa-brands fa-instagram fa-2xl"
+                style="color: #fffeff"
+              ></i>
+            </a>
+          </div>
         </nav>
       </footer>
     </div>
