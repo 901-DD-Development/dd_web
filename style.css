@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;400&display=swap');
+
+
+/* 
+@font-face {
+  font-family: 'Tomorrow';
+  src: url('./fonts/Tomorrow-Regular.ttf') format('truetype');
+} */
+
+/* @font-face {
+  font-family: "Agrandir";
+  src: url('./fonts/Agrandir-Grand.otf') format('opentype');
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+/* h1 {
+  font-family: 'Agrandir', sans-serif; /* Fallback to a generic sans-serif font */
+  /* font-size: 1em; Adjust font size for visibility */
+/* }
+
+
+/* h1 {
+    font-family:'Tomorrow';
+} */
