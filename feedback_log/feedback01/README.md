@@ -1,4 +1,5 @@
 For feedback
+
 • The logo  at the top should be bigger maybe a bigger width.
 • The “Why DD?” can that just be “Why Diamond Development?” I show my auntie and she didn’t know what DD means. We can add the word Diamond Development, and keep the DD. We can just put the words Diamond development below “Why DD?”
 • Also I love the seamless design it looks very nice.
