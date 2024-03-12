@@ -14,18 +14,20 @@
     
   </head>
   <body class="bg-blue">
-    <button
+      <!-- This button will be on the bottom right of the page no matter the size of the screen -->
+      <button
       class="btn btn-circle fixed bottom-4 z-20 right-4 bg-white text-blue border-2 border-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition duration-300"
       id="backToTopBtn"
       onclick="scrollToTop()"
     >
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+    
 
     <div id="Home">
       <div class="navbar bg-base-100 text-lg">
         <div class="flex-1">
-          <a class="btn btn-ghost size-52 mt-6 ml-14"
+          <a class="btn btn-ghost size-60 mt-6 ml-14"
             ><img
               src="./images/transparent_logo.png"
               alt="Diamond Development Logo"
@@ -34,15 +36,19 @@
         <div class="flex-none text-white p-5 mr-7 ">
           <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
             <a href="#Home">Home</a>
+            <span class="underline" style="background-color:#ffffff;"></span>
           </button>
           <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
             <a href="#Services">Services</a>
+            <span class="underline" style="background-color:#ffffff;"></span>
           </button>
           <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
-            <a href="#AboutUs">About</a>
+            <a href="#DiamondWay">About</a>
+            <span class="underline" style="background-color:#ffffff;"></span>
           </button>
           <button class="btn btn-square btn-ghost mr-12 text-lg font-Tomorrow">
             <a href="#TalkToUs">Contact</a>
+            <span class="underline" style="background-color:#ffffff;"></span>
           </button>
         </div>
       </div>
@@ -56,11 +62,12 @@
           tech to us.
         </h1>
         <div class="flex justify-center font-Tomorrow">
-          <button
-            class="font-tomorrow btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white text-blue rounded-md px-6 py-3 hover:text-white"
+          <a href="#aboutUs"
+            class="btn font-tomorrow btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-white text-blue rounded-md px-6 py-3 hover:text-white"
           >
             Learn More
-          </button>
+            
+        </a>
         </div>
       </div>
     </div>
@@ -70,6 +77,7 @@
       alt="weirdwavedotthing"
       style="width: 40%; max-width: 1200px"
     />
+    
     <div class="flex">
       <!-- DiamondWay Section (2/3 width) -->
       <div
@@ -114,7 +122,7 @@
               style="filter: grayscale(100%)"
             />
             <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Logo Services</h1>
-            <p class="text-center mt-4 font-Tomorrow">Description 1</p>
+            <p class="text-center mt-4 font-Tomorrow">Elevate your brand with our custom logo designs – a visual identity that speaks volumes.</p>
           </div>
 
           <div class="service-item flex flex-col items-center">
@@ -125,7 +133,7 @@
               style="filter: grayscale(100%)"
             />
             <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Programming Services</h1>
-            <p class="text-center mt-4 font-Tomorrow ">Description 2</p>
+            <p class="text-center mt-4 font-Tomorrow ">Tailored programming solutions for seamless business operations – from CRM to data management.</p>
           </div>
 
           <div class="service-item flex flex-col items-center">
@@ -138,7 +146,7 @@
             <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">
               Software Maintenance and Support
             </h1>
-            <p class="text-center mt-4 font-Tomorrow">Description 3</p>
+            <p class="text-center mt-4 font-Tomorrow">Keep your software running smoothly with our dedicated maintenance and support – worry-free digital reliability.</p>
           </div>
 
           <!-- Add more service items as needed -->
@@ -149,7 +157,7 @@
           id="AboutUs"
           class="h-screen w-screen p-2 bg-gray text-black flex flex-col items-center justify-center"
         >
-          <h1 class="text-8xl text-blue mb-8 font-Agrandir">Why DD?</h1>
+          <h1 class="text-8xl text-blue mb-8 font-Agrandir text-center">Why Diamond Development?</h1>
           <div class="grid grid-cols-3 gap-22">
             <div class="service-item flex flex-col items-center">
               <img
@@ -173,8 +181,7 @@
               />
               <h1 class="text-xl text-center mt-4 text-blue font-Tomorrow font-extrabold">Unmatched Support</h1>
               <p class="text-center mt-4 font-Tomorrow">Virtual assistance.</p>
-              <p class="text-center font-Tomorrow">Talk to us about any concerns,</p>
-              <p class="text-center font-Tomorrow">24/7.</p>
+              <p class="text-center font-Tomorrow">Talk to us about any concerns. </p>
 
             </div>
 
@@ -278,7 +285,7 @@
       >
         <p class="text-7xl font-light mb-4 font-Agrandir">Talk to Us</p>
         <p class="text-lg mb-4 mt-4 font-Tomorrow">
-          Feel free to call, email, or hit us up on our social media accounts.
+          Feel free to call, email, or talk to us on our social media accounts.
         </p>
         <button
           onclick="sendEmailWithSubject();"
@@ -300,22 +307,22 @@
         </nav>
         <nav>
           <div class="grid grid-flow-col gap-4 mt-4 mr-16">
-            <a class="flex items-center" style="margin-top: 5px">
+            <a href="https://www.facebook.com/profile.php?id=61557026912736"class="flex items-center" style="margin-top: 5px">
               <i
                 class="fa-brands fa-facebook fa-2xl"
                 style="color: #fffeff"
               ></i>
             </a>
-
+<!-- 
             <a class="flex items-center relative" style="margin-top: 5px">
               <i
                 class="fa-brands fa-x-twitter fa-2xl"
                 style="color: #fffeff"
               ></i>
-            </a>
+            </a> -->
 
-            <a
-              class="flex items-center p-2 rounded-full"
+            <a href="https://www.instagram.com/_diamonddevelopment/"
+              class="flex items-center  rounded-full"
               style="margin-top: 5px"
             >
               <i
@@ -323,6 +330,15 @@
                 style="color: #fffeff"
               ></i>
             </a>
+            <a href="https://www.linkedin.com/company/diamonddevelopment"
+            class="flex items-center  rounded-full"
+            style="margin-top: 5px"
+          >
+            <i
+              class="fa-brands fa-linkedin fa-2xl"
+              style="color: #fffeff"
+            ></i>
+          </a>
           </div>
         </nav>
       </footer>
