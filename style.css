@@ -32,3 +32,15 @@ body {
 /* h1 {
     font-family:'Tomorrow';
 } */
+
+.underline {
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	width: 0;
+	transition: width .15s linear;
+}
+
+*:hover>.underline, .active>.underline {
+	width: 110%;
+}
